@@ -1,22 +1,26 @@
-class Person:
-    arms_count = 2
+import requests
 
-    def __init__(self):
-        self.name = name
-
-    def __str__(self):
-        return f'Person<name={self.name}>'
-    def greet(self):
-        print(f'Hi {self.name}!')
-
-    def __eq__(self, other):
-
-me = Person('Nick')
-clone = Person('Vasya')
-you = Person('Vasya')
+poke = requests.get('https://pokeapi.co/api/v2/pokemon/ditto').json()
+print(poke['id'], poke['name'], poke['weight'], poke['height'])
 
 
-print(me, you)
-print(me == clone)
-me.greet()
-you.greet()
+
+
+class BasePokemon:
+    def __init__(self, name)
+        self.name == 'ditto'
+
+
+class Pokemon(BasePokemon):
+    def __init__(self, ID, name, height, weight)
+        self.id == 132
+        self.name == 'ditto'
+        self.weight == 40
+        self.height == 3
+    def __str__(self, id, name, height, weight):
+
+
+
+
+class PokeIp:
+    def  get.pokemon(self, pokemon)
